@@ -11,15 +11,6 @@
 # uses changed in 2012, and older versions will display incorrectly,
 # in confusing ways.
 #
-# In addition, I recommend the
-# [Solarized theme](https://github.com/altercation/solarized/) and, if you're
-# using it on Mac OS X, [iTerm 2](https://iterm2.com/) over Terminal.app -
-# it has significantly better color fidelity.
-#
-# If using with "light" variant of the Solarized color schema, set
-# SOLARIZED_THEME variable to "light". If you don't specify, we'll assume
-# you're using the "dark" variant.
-#
 # # Goals
 #
 # The aim of this theme is to only show you *relevant* information. Like most
@@ -89,7 +80,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"
+    prompt_segment blue cyan "%(!.%{%F{yellow}%}.)%n@%m"
   fi
 }
 
@@ -111,9 +102,9 @@ prompt_git() {
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
     if [[ -n $dirty ]]; then
-      prompt_segment yellow black
+      prompt_segment red black
     else
-      prompt_segment green $CURRENT_FG
+      prompt_segment green black
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
@@ -199,7 +190,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment magenta gray '%~'
 }
 
 # Virtualenv: current working virtualenv
