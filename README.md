@@ -6,7 +6,7 @@ panel in VSCode when using the 'Spacemacs - dark' color theme.
 
 ## Install
 
-````bash
+```bash
 git clone git@github.com:s6o/space-agnoster-zsh-theme.git
 cd space-agnoster-zsh-theme
 ln -s $PWD/space-agnoster.zsh-theme ~/.oh-my-zsh/custom/themes/agnoster.zsh-theme
