@@ -12,3 +12,9 @@ cd space-agnoster-zsh-theme
 ln -s $PWD/space-agnoster.zsh-theme ~/.oh-my-zsh/custom/themes/agnoster.zsh-theme
 ```
 
+## Screenshots
+
+[Terminal](https://github.com/s6o/space-agnoster-zsh-theme/raw/master/terminal.png)
+
+[VSCode](https://github.com/s6o/space-agnoster-zsh-theme/raw/master/vscode.png)
+
