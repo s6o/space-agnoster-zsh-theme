@@ -14,6 +14,6 @@ ln -s $PWD/space-agnoster.zsh-theme ~/.oh-my-zsh/custom/themes/agnoster.zsh-them
 
 ## Screenshots
 
-![Terminal](/space-agnoster-zsh-theme/terminal.png?raw=true "Terminal / Pro")
+![Terminal](https://github.com/s6o/space-agnoster-zsh-theme/raw/master/terminal.png)
 
-![VSCode](/space-agnoster-zsh-theme/vscode.png?raw=true "VSCode / Spacemacs dark")
+![VSCode](https://github.com/s6o/space-agnoster-zsh-theme/raw/master/vscode.png)
